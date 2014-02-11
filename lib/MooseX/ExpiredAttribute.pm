@@ -5,7 +5,7 @@ use Moose ();
 use MooseX::ExpiredAttribute::Role::Meta::Attribute;
 use MooseX::ExpiredAttribute::Role::Object;
 
-$MooseX::ExpiredAttribute::VERSION = 0.02;
+$MooseX::ExpiredAttribute::VERSION = 0.021;
 
 1;
 
@@ -26,8 +26,8 @@ MooseX::ExpiredAttribute - Expired and auto rebuilded attributes in Moose object
 
     has 'config' => (
         traits  => [ qw( Expired ) ],
-        is              => 'rw',
-        isa             => 'Hash',
+        is      => 'rw',
+        isa     => 'HashRef',
         expires => 5.5,
         lazy    => 1,
         builder => '_build_config',
@@ -59,8 +59,8 @@ and even by this way:
 
     has 'config' => (
         traits  => [ qw( Expired ) ],
-        is              => 'rw',
-        isa             => 'Hash',
+        is      => 'rw',
+        isa     => 'HashRef',
         expires => 5.5,
         lazy    => 1,
         builder => '_build_config',

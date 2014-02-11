@@ -4,7 +4,7 @@ use warnings;
 use inc::Module::Install;
 
 name 'MooseX-ExpiredAttribute';
-abstract 'Expired attributes in Moose objects';
+abstract 'Expired and auto rebuilded attributes in Moose objects';
 
 author 'Perlover <perlover@perlover.com>';
 version_from 'lib/MooseX/ExpiredAttribute.pm';

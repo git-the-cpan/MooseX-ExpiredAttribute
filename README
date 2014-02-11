@@ -10,8 +10,8 @@ SYNOPSIS
 
         has 'config' => (
             traits  => [ qw( Expired ) ],
-            is              => 'rw',
-            isa             => 'Hash',
+            is      => 'rw',
+            isa     => 'HashRef',
             expires => 5.5,
             lazy    => 1,
             builder => '_build_config',
@@ -43,8 +43,8 @@ SYNOPSIS
 
         has 'config' => (
             traits  => [ qw( Expired ) ],
-            is              => 'rw',
-            isa             => 'Hash',
+            is      => 'rw',
+            isa     => 'HashRef',
             expires => 5.5,
             lazy    => 1,
             builder => '_build_config',

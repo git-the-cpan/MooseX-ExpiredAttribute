@@ -65,8 +65,8 @@ This role should be attached as I<trait> to attributes which should be have I<ex
 
     has 'config' => (
         traits  => [ qw( Expired ) ],
-        is              => 'rw',
-        isa             => 'Hash',
+        is      => 'rw',
+        isa     => 'HashRef',
         expires => 5.5,
         lazy    => 1,
         builder => '_build_config',
