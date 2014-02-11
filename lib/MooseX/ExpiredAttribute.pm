@@ -5,7 +5,7 @@ use Moose ();
 use MooseX::ExpiredAttribute::Role::Meta::Attribute;
 use MooseX::ExpiredAttribute::Role::Object;
 
-$MooseX::ExpiredAttribute::VERSION = 0.01;
+$MooseX::ExpiredAttribute::VERSION = 0.02;
 
 1;
 
