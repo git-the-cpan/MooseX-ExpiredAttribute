@@ -47,7 +47,7 @@ select( undef, undef, undef, 0.5 );     # sleep 0.5 second
 ok $obj->test eq 'test';
 ok $obj->build_times == 1;
 
-select undef, undef, undef, 1.1;
+select undef, undef, undef, 1.1;        # sleep 1.1 second
 
 ok $obj->test eq 'test';
 ok $obj->build_times == 2;
@@ -56,7 +56,7 @@ ok $obj2->build_times == 1;
 ok $obj2->test eq 'test';
 cmp_ok $obj2->build_times, '==', 2;
 
-select undef, undef, undef, 0.5;        # sleep 0.5 second
+select undef, undef, undef, 0.5;
 
 ok $obj->test eq 'test';
 ok $obj->build_times == 2;
@@ -67,7 +67,7 @@ $obj->test('super');
 ok $obj->test eq 'super';
 ok $obj->build_times == 2;
 
-select undef, undef, undef, 0.5;        # sleep 0.5 second
+select undef, undef, undef, 0.5;
 
 ok $obj->test eq 'super';
 ok $obj->build_times == 2;

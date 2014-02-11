@@ -19,7 +19,9 @@ no_index:
   directory:
     - inc
     - t
+requires:
+  Moose: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/Perlover/MooseX-ExpiredAttribute.git
-version: 0.021
+version: 0.022

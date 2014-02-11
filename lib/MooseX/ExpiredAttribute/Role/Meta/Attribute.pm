@@ -64,12 +64,12 @@ This role should be attached as I<trait> to attributes which should be have I<ex
     use MooseX::ExpiredAttribute;
 
     has 'config' => (
-        traits  => [ qw( Expired ) ],
-        is      => 'rw',
-        isa     => 'HashRef',
-        expires => 5.5,
-        lazy    => 1,
-        builder => '_build_config',
+        traits   => [ qw( Expired ) ],
+        is       => 'rw',
+        isa      => 'HashRef',
+        expires  => 5.5,
+        lazy     => 1,
+        builder  => '_build_config',
     );
 
 Please read L<MooseX::ExpiredAttribute/SYNOPSIS> for more examples and how to use.

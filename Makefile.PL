@@ -12,6 +12,8 @@ version_from 'lib/MooseX/ExpiredAttribute.pm';
 auto_set_repository;
 license 'perl';
 
+requires 'Moose';
+
 build_requires 'Test::More';
 
 WriteAll();
