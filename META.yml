@@ -20,8 +20,8 @@ no_index:
     - inc
     - t
 requires:
-  Moose: 0
+  Moose: 2.1204
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/Perlover/MooseX-ExpiredAttribute.git
-version: 0.022
+version: 0.023

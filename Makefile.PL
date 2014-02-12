@@ -12,7 +12,7 @@ version_from 'lib/MooseX/ExpiredAttribute.pm';
 auto_set_repository;
 license 'perl';
 
-requires 'Moose';
+requires 'Moose' => 2.1204;
 
 build_requires 'Test::More';
 
